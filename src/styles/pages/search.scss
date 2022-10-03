@@ -1,0 +1,48 @@
+.page-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  &-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    text-align: center;
+  }
+  &-input {
+    border: 1px solid $pink-light;
+    border-radius: 5px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    &:focus-within {
+      border-color: $pink-ligth-hover;
+    }
+    input {
+      all: unset;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  &-controls {
+  }
+  &-result {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2vh;
+  }
+  &-description {
+    width: 80%;
+    margin-bottom: 4vh;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}

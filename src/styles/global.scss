@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow: hidden;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+}
+
+.btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 17px;
+  transition: all 250ms ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
+  &-primary {
+    background-color: $btn-primary;
+    &:hover {
+      background-color: $btn-primary-hover;
+    }
+  }
+}
+
+.text {
+  &-success {
+    color: $text-success;
+  }
+  &-description {
+    color: $text-description;
+  }
+  &-blue {
+    color: $text-blue;
+  }
+  &-error {
+    color: $text-error;
+  }
+}
